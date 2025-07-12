@@ -1,0 +1,4 @@
+# friendly utils for *shells
+rgf() {
+	rg --files | grep ${1}
+}
