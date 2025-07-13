@@ -1,4 +1,10 @@
 # friendly utils for *shells
+# rgf find files faster using ripgrep's --files flag
 rgf() {
 	rg --files | grep ${1}
+}
+# Some programs are symlinked to another program which in-turn calls the actual program
+# e.g. on fedora, cc, gcc are symlinked to ccache. cache in turn calls gcc etc.
+realprogpath() {
+	realpath $(which ${1})
 }
