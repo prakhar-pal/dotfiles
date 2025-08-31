@@ -8,3 +8,6 @@ rgf() {
 realprogpath() {
 	realpath $(which ${1})
 }
+zed() {
+	flatpak run dev.zed.Zed ${1}
+}
