@@ -11,3 +11,4 @@ realprogpath() {
 zed() {
 	flatpak run dev.zed.Zed ${1}
 }
+ export ELECTRON_OZONE_PLATFORM_HINT=auto
